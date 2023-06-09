@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Головна</title>
+  <!-- Підключення стилів Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+    .calculator {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .calculator button {
+      width: 60px;
+      height: 60px;
+      margin: 5px;
+    }
+    .calculator button.btn-danger{
+      width: auto;
+      height: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .calculator input {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand logo" href="#">Калькулятор</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="account.html">Налаштування</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="authorization.html">Вихід</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="calculator">
+          <input type="text" id="result" class="form-control mb-3" disabled>
+          <div class="row d-flex justify-content-center">
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">7</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">8</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">9</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-primary operator-js">+</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">4</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">5</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">6</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-primary operator-js">-</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">1</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">2</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">3</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-primary operator-js">*</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary number-js">0</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-secondary decimal-js">.</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-primary operator-js">/</button>
+            </div>
+            <div class="col-3 text-center">
+              <button class="btn btn-success result-js">=</button>
+            </div>
+          </div>
+          <button class="btn btn-danger mt-3 clear-js">Скинути</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Підключення скриптів Bootstrap та jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/controller.js"></script>
+</body>
+</html>
